@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from scanner.scan import run_all_scans
 from ai_analysis.analyze import explain_vulns
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
