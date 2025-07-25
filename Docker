@@ -1,0 +1,2 @@
+docker build -t kashf-911 .
+docker run -p 5000:5000 kashf-911
